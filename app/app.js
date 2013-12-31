@@ -1,6 +1,7 @@
 import Resolver from 'resolver';
 
 var App = Ember.Application.extend(Bootstrap.Register,{
+  rootElement: '#app-container',
   LOG_ACTIVE_GENERATION: true,
   LOG_MODULE_RESOLVER: true,
   LOG_TRANSITIONS: true,

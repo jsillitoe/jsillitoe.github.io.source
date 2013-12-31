@@ -1,4 +1,21 @@
-<h2 id='title'>Welcome to Ember.js</h2>
-{{bs-alert message="A self destroyable hello world message! that Alerts" type="info" dismissAfter=5 fade=true}}
+{{bs-alert message="Welcome!  This is a work in progress.  You have been warned." type="info" dismissAfter=3 fade=true}}
+{{bs-growl-notifications}}
+
+<nav class="navbar navbar-default" role="navigation">
+	<div class="navbar-header">
+    	<a class="navbar-brand" href="#">{{gravatar-image email=controller.application.email size="25"}}</a>
+  	</div>
+  	
+  	<ul class="nav navbar-nav">
+      <li>{{#link-to 'index'}}<span class="glyphicon glyphicon-home"></span> Home{{/link-to}}</li>
+      <li>{{#link-to 'about'}}<span class="glyphicon glyphicon-user"></span> About{{/link-to}}</li>
+      <li>{{#link-to 'projects'}}<span class="glyphicon glyphicon-list"></span> Projects{{/link-to}}</li>
+      <li> {{#link-to 'contacts'}}<span class="glyphicon glyphicon-envelope"></span> Contacts{{/link-to}}</li>
+    </ul>
+  	
+</nav>
+
+
+
 
 {{outlet}}

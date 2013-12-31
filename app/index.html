@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>App</title>
+  <title>Development Site for Joe Sillitoe</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- build:css(tmp/result) /assets/app.min.css -->
   <link rel="stylesheet" href="/assets/app.css">
   <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/vendor/ember-addons.bs_for_ember/dist/css/bs-growl-notifications.min.css">
   <!-- endbuild -->
 
   <!-- for more details visit: https://github.com/yeoman/grunt-usemin -->
@@ -40,13 +41,17 @@
     <script src="/vendor/ember/ember.js"></script>
     <script src="/vendor/ember-addons.bs_for_ember/dist/js/bs-core.max.js"></script>
     <script src="/vendor/ember-addons.bs_for_ember/dist/js/bs-alert.max.js"></script>
+    <script src="/vendor/ember-addons.bs_for_ember/dist/js/bs-growl-notifications.max.js"></script>
     <script src="/vendor/momentjs/moment.js"></script>
+    <script src="/vendor/js-md5/js/md5.js"></script>
     <!-- @endif --><!-- @if dist=true -->
     <script src="/vendor/handlebars/handlebars.runtime.js"></script>
     <script src="/vendor/ember/ember.prod.js"></script>
     <script src="/vendor/ember-addons.bs_for_ember/dist/js/bs-core.min.js"></script>
     <script src="/vendor/ember-addons.bs_for_ember/dist/js/bs-alert.min.js"></script>
+    <script src="/vendor/ember-addons.bs_for_ember/dist/js/bs-growl-notifications.min.js"></script>
     <script src="/vendor/momentjs/min/moment.min.js"></script>
+    <script src="/vendor/js-md5/js/md5.min.js"></script>
     <!-- @endif -->
 
     <script src="/vendor/ember-data/ember-data.js"></script>
@@ -108,6 +113,6 @@
     window.App = require('appkit/app')["default"].create();
   </script>
   <!-- @endif -->
-
+<div id="app-container" class="container"></div>
 </body>
 </html>

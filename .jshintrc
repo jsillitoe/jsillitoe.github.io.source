@@ -8,7 +8,8 @@
     "Em",
     "DS",
     "$",
-    "Bootstrap"
+    "Bootstrap",
+    "md5"
   ],
   "node" : false,
   "browser" : false,
