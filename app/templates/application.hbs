@@ -1,21 +1,36 @@
 {{bs-alert message="Welcome!  This is a work in progress.  You have been warned." type="info" dismissAfter=3 fade=true}}
 {{bs-growl-notifications}}
 
+<header class="page-header site-header" role="banner">
+  <h1>jsillitoe's dev site. <small>blog, projects, and about me.</small></h1>
+</header>
+
 <nav class="navbar navbar-default" role="navigation">
-	<div class="navbar-header">
-    	<a class="navbar-brand" href="#">{{gravatar-image email=controller.application.email size="25"}}</a>
-  	</div>
-  	
+ 	
   	<ul class="nav navbar-nav">
-      <li>{{#link-to 'index'}}<span class="glyphicon glyphicon-home"></span> Home{{/link-to}}</li>
-      <li>{{#link-to 'about'}}<span class="glyphicon glyphicon-user"></span> About{{/link-to}}</li>
+      <li>{{#link-to 'index'}}<span class="glyphicon glyphicon-home"></span> Blog{{/link-to}}</li>
       <li>{{#link-to 'projects'}}<span class="glyphicon glyphicon-list"></span> Projects{{/link-to}}</li>
-      <li> {{#link-to 'contacts'}}<span class="glyphicon glyphicon-envelope"></span> Contacts{{/link-to}}</li>
+      <li>{{#link-to 'resume'}}<span class="glyphicon glyphicon-user"></span> Resume{{/link-to}}</li>
+      <li> {{#link-to 'contact'}}<span class="glyphicon glyphicon-envelope"></span> Contact{{/link-to}}</li>
     </ul>
   	
 </nav>
 
+<div class="application-outlet">
+	{{outlet}}
+</div>
 
 
+<footer class="page-footer site-footer center-block" role="contentinfo">
 
-{{outlet}}
+  <ul class="list-inline">
+
+    <li>
+		<iframe allowtransparency="true" frameborder="0" scrolling="no"  src="//platform.twitter.com/widgets/follow_button.html?screen_name=jsillitoe"  style="width:300px; height:20px;"></iframe>
+    </li>
+
+  </ul>
+
+  <p>Designed and built by <a href="http://twitter.com/jsillitoe" target="_blank">@jsillitoe</a>.</p>
+
+</footer>

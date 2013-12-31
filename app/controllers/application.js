@@ -1,7 +1,16 @@
 export default Ember.Controller.extend({
 	
+  firstname: 'Joseph',
+  lastname: 'Sillitoe',
+  nickname: 'Joe',
+  streetaddress: '924 Strider Dr.',
+  city: 'Henderson',
+  region: 'Nevada',
+  country: 'USA',
+  facebook: 'jsillitoe',	
   email: 'jsillitoe@gmail.com',
-   
-  years: [2007, 2008, 2009, 2010, 2011, 2012]
+  twitter: 'jsillitoe',
+  phone: '(702) 430-1412',
+  bloggerApiKey: 'AIzaSyDlNNKZYUYMQCX_Nd8jsseS8BW4Nva4eWg'
 
 });

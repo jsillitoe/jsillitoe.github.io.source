@@ -1,6 +1,52 @@
-/* Put your CSS here */
-html, body {
-    margin: 20px;
+
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:400,800italic);
+
+
+html, body{
+	background: #262c33 url('/assets/line-tile.png') top left;
+	margin: 10px;
+}
+
+.application-outlet,.site-footer {
+	background-color: #f8f8f8;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #e7e7e7;
+}
+
+.site-header h1 { font-family: 'Alegreya Sans', sans-serif; font-weight: 400; color:#CCC; }
+	
+.site-footer { margin-top:10px}
+
+#contact-details li.address   {
+    background: url("/assets/home.png") no-repeat;
+   background-position: 0px 0px;
+    padding: 0px 0px 12px 40px;
+}
+ 
+#contact-details li.phone  {
+    background: url("/assets/phone.png") no-repeat;
+   background-position: 0px 0px;
+    padding: 0px 0px 12px 40px;
+}
+ 
+#contact-details li.email  {
+    background: url("/assets/mail.png") no-repeat;
+   background-position: 0px 0px;
+    padding: 0px 0px 12px 40px;
+}
+ 
+#contact-details li.site_url  {
+    background: url("/assets/computer.png") no-repeat;
+   background-position: 0px 2px;
+    padding: 0px 0px 12px 40px;
+}
+ 
+#contact-details li.twitter   {
+    background: url("/assets/twitter_sm.png") no-repeat;
+   background-position: 0px 0px;
+    padding: 0px 0px 12px 40px;
 }
 
 @keyframes domChanged { from { background: yellow; } }
