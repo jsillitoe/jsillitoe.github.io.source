@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Joe Sillitoe -- Adventurer -- @jsillitoe
 
 # THANKS
 
-    <name>
+    Stefan Penner and Ember App Kit Contributors.
 
 # TECHNOLOGY COLOPHON
 
