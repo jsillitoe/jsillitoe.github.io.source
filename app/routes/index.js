@@ -1,5 +1,8 @@
 export default Ember.Route.extend({
+  needs: 'application',
   model: function() {
-    return ['red', 'yellow', 'blue'];
+    return EmberFire.Array.create({
+      ref: new Firebase("https://jsillitoe.firebaseio.com/blog")
+    });
   }
 });

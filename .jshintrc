@@ -9,7 +9,9 @@
     "DS",
     "$",
     "Bootstrap",
-    "md5"
+    "md5",
+    "Firebase",
+    "Emberfire"
   ],
   "node" : false,
   "browser" : false,

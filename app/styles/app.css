@@ -3,7 +3,8 @@
 
 
 html, body{
-	background: #262c33 url('/assets/line-tile.png') top left;
+	background-color: #262c33; !important
+	background: #262c33 url('assets/line-tile.png') top left;
 	margin: 10px;
 }
 
@@ -20,31 +21,31 @@ html, body{
 .site-footer { margin-top:10px}
 
 #contact-details li.address   {
-    background: url("/assets/home.png") no-repeat;
+    background: url("assets/home.png") no-repeat;
    background-position: 0px 0px;
     padding: 0px 0px 12px 40px;
 }
  
 #contact-details li.phone  {
-    background: url("/assets/phone.png") no-repeat;
+    background: url("assets/phone.png") no-repeat;
    background-position: 0px 0px;
     padding: 0px 0px 12px 40px;
 }
  
 #contact-details li.email  {
-    background: url("/assets/mail.png") no-repeat;
+    background: url("assets/mail.png") no-repeat;
    background-position: 0px 0px;
     padding: 0px 0px 12px 40px;
 }
  
 #contact-details li.site_url  {
-    background: url("/assets/computer.png") no-repeat;
+    background: url("assets/computer.png") no-repeat;
    background-position: 0px 2px;
     padding: 0px 0px 12px 40px;
 }
  
 #contact-details li.twitter   {
-    background: url("/assets/twitter_sm.png") no-repeat;
+    background: url("assets/twitter_sm.png") no-repeat;
    background-position: 0px 0px;
     padding: 0px 0px 12px 40px;
 }
