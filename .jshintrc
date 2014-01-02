@@ -11,7 +11,10 @@
     "Bootstrap",
     "md5",
     "Firebase",
-    "Emberfire"
+    "EmberFire",
+    "FirebaseSimpleLogin",
+    "moment",
+    "Showdown"
   ],
   "node" : false,
   "browser" : false,

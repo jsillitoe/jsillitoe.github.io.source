@@ -1,0 +1,25 @@
+
+<div class="page-header">
+  <h2>{{title}} <small> {{moment-timeago date}}</small></h2>
+</div>
+
+{{#if controllers.application.isLoggedIn}}
+<div class="clearfix">
+	<button {{action 'doneEditing'}} type="button" class="btn btn-primary active">View</button>
+	<button {{action 'edit'}}type="button" class="btn btn-default active">Edit</button>
+</div>
+{{/if}}
+
+{{#if isEditing}}
+  {{partial 'post/edit'}}
+{{/if}}
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+	{{showdown-makehtml excerpt}}
+  </div>
+  <div class="panel-body">
+    {{showdown-makehtml body}}
+  </div>
+</div>
+

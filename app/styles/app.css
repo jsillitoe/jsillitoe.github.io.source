@@ -5,7 +5,6 @@
 html, body{
 	background-color: #262c33; !important
 	background: #262c33 url('assets/line-tile.png') top left;
-	margin: 10px;
 }
 
 .application-outlet,.site-footer {
@@ -14,6 +13,7 @@ html, body{
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 	border: 1px solid #e7e7e7;
+	padding:4px;
 }
 
 .site-header h1 { font-family: 'Alegreya Sans', sans-serif; font-weight: 400; color:#CCC; }

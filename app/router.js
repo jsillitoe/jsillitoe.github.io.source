@@ -6,9 +6,9 @@ Router.map(function() {
   this.resource('resume', function(){});
   this.resource('projects', function(){});
   this.resource('contact', function(){});
-  // this.resource('posts', function() {
-  //   this.route('new');
-  // });
+  this.resource('index', {path: '/'}, function() {
+    this.resource('post', {path: '/blog/:post_id'});
+  });
 });
 
 export default Router;

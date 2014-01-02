@@ -1,17 +1,38 @@
-<header class="page-header site-header" role="banner">
-  <h1>jsillitoe's dev site. <small>blog, projects, and about me.</small></h1>
+
+<header class="page-header site-header row" role="banner">
+
+  
+  <h1 class="col-md-10">jsillitoe's dev site. <small>blog, projects, and about me.</small></h1>
+
+  <h1 class="col-md-2">
+  {{#if isLoggedIn}}
+	<a {{action 'logout'}} class="btn btn-block btn-social btn-github btn-sm">
+	  <i class="fa fa-github"></i>
+	  {{user.displayName}} (logout)
+	</a>
+  {{else}}
+	<a {{action 'login'}} class="btn btn-block btn-social btn-github btn-sm">
+	  <i class="fa fa-github"></i>
+	  Sign in with Github
+	</a>
+  {{/if}}
+  </h1>
+
 </header>
 
+
+
 <nav class="navbar navbar-default" role="navigation">
- 	
   	<ul class="nav navbar-nav">
       <li>{{#link-to 'index'}}<span class="glyphicon glyphicon-home"></span> Blog{{/link-to}}</li>
       <li>{{#link-to 'projects'}}<span class="glyphicon glyphicon-list"></span> Projects{{/link-to}}</li>
       <li>{{#link-to 'resume'}}<span class="glyphicon glyphicon-user"></span> Resume{{/link-to}}</li>
       <li> {{#link-to 'contact'}}<span class="glyphicon glyphicon-envelope"></span> Contact{{/link-to}}</li>
     </ul>
-  	
 </nav>
+
+
+
 
 <div class="application-outlet">
 	{{outlet}}

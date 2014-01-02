@@ -1,0 +1,16 @@
+
+{{#each}}
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{#link-to 'post' this}}{{title}}{{/link-to}} <span class="label label-default">{{moment-timeago date}}</span></h3>
+  </div>
+  <div class="panel-body">
+    {{showdown-makehtml excerpt}}
+  </div>
+  <div class="panel-footer">{{#link-to 'post' this}}Read full post.{{/link-to}}</div>
+</div>
+
+{{/each}}
+
+
