@@ -1,6 +1,57 @@
 
 <div class="row"> 
 
+
+{{#if controllers.application.isLoggedIn}}
+<div class="clearfix col-md-12">
+{{#unless controllers.post.isCreating}}
+	<button {{action 'createNew' target="controllers.post"}} type="button" class="btn btn-primary active">Create New Post</button>
+{{/unless}}
+
+
+{{#if controllers.post.isCreating}}
+
+<p>{{input type="text" value=controllers.post.newpost.title size="50"}}</p>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    {{textarea value=controllers.post.newpost.excerpt cols="80" rows="2"}}
+  </div>
+  <div class="panel-body">
+    {{textarea value=controllers.post.newpost.body cols="80" rows="12"}}
+  </div>
+  <div class="panel-footer">
+    <button {{action 'saveNew' target="controllers.post"}} type="button" class="btn btn-primary active">Save</button>
+	<button {{action 'cancelNew' target="controllers.post"}}type="button" class="btn btn-default active">Cancel</button>
+  </div>
+</div>
+
+<h1>Preview:</h1>
+<hr/>	
+
+
+<div class="page-header">
+  <h2>{{controllers.post.newpost.title}} <small> {{moment-timeago controllers.post.newpost.date}}</small></h2>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+	{{showdown-makehtml controllers.post.newpost.excerpt}}
+  </div>
+  <div class="panel-body">
+    {{showdown-makehtml controllers.post.newpost.body}}
+  </div>
+</div>
+
+<hr/>	
+{{/if}}
+
+</div>
+{{/if}}
+
+
+
+
 	<div class="col-md-9"> 
 		{{outlet}}
 	</div>
@@ -12,10 +63,13 @@
 	    </thead>
 	    {{#each model}}
 	    <tr><td>
-	        {{#link-to 'post' this}}{{title}} - {{author.name}}{{/link-to}}
+	        {{#link-to 'post' this}}{{title}}{{/link-to}}
 	    </td></tr>
 	    {{/each}}
 	  </table>
+	  
+	  
+	  
 	</div>
 	
 </div>

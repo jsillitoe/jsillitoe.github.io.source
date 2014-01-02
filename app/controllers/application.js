@@ -19,6 +19,8 @@ export default Ember.Controller.extend({
       auth.login('github');
     },
     logout: function(){
+      var fbRef = new Firebase('https://jsillitoe.firebaseio.com');
+      fbRef.unauth();
       this.set('isLoggedIn', false);
       this.set('user', null);
     }   
